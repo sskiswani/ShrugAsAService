@@ -2,16 +2,47 @@
 <html lang="en">
   <head>
     <title>¯\_(ツ)_/¯</title>
-    <meta charset="utf-8">
-    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojipedia/132/shrug_1f937.png" type="image/x-icon">
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojipedia/132/shrug_1f937.png"
+      type="image/x-icon"
+    />
     <meta bane="og:title" content="¯\_(ツ)_/¯" />
-    <meta name="twitter:title" content="¯\_(ツ)_/¯">
-    <meta name="Description" content="¯\_(ツ)_/¯">
-    <meta property="og:title" content="¯\_(ツ)_/¯">
-    <meta property="og:description" content="¯\_(ツ)_/¯">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sskiswani.github.io/ShrugAsAService/">
-    <meta property="og:image" content="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojipedia/132/shrug_1f937.png">
-</head>
-<body>¯\_(ツ)_/¯</body>
+    <meta name="twitter:title" content="¯\_(ツ)_/¯" />
+    <meta name="Description" content="¯\_(ツ)_/¯" />
+    <meta property="og:title" content="¯\_(ツ)_/¯" />
+    <meta property="og:description" content="¯\_(ツ)_/¯" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sskiswani.github.io/ShrugAsAService/" />
+    <meta
+      property="og:image"
+      content="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/emojipedia/132/shrug_1f937.png"
+    />
+    <style>
+      #copy {
+        cursor: pointer;
+      }
+      #md-copy {
+        visibility: hidden;
+      }
+      div:hover #md-copy {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span id="copy">¯\_(ツ)_/¯</span>
+      <button id="md-copy">copy markdown</button>
+    </div>
+    <script>
+      document.getElementById('copy').addEventListener('click', () => {
+        void navigator.clipboard.writeText('¯\\_(ツ)_/¯');
+      });
+      document.getElementById('md-copy').addEventListener('click', () => {
+        void navigator.clipboard.writeText(`[¯\\\\\\_(ツ)\_/¯](https://sskiswani.github.io/ShrugAsAService/)`);
+      });
+    </script>
+  </body>
 </html>
